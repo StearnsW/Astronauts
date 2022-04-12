@@ -197,7 +197,7 @@ class Astronaut:
         return f"{self.__name}, {self.__status}"
 
 
-file=open(r"C:\Users\willi\Desktop\astronauts.csv",'r')
+file=open(r"astronauts.csv",'r')
 reader = csv.DictReader(file)
 astronaut_list=[]
 for row in reader:
