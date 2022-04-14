@@ -201,7 +201,7 @@ file=open(r"astronauts.csv",'r')
 reader = csv.DictReader(file)
 astronaut_list=[]
 for row in reader:
-    astronaut_list.append(Astronaut(row["Name"],row["Space Flight (hr)"],row["Status"]))
+    astronaut_list.append(Astronaut(row["Name"],int(row["Space Flight (hr)"]),row["Status"]))
 
 file.close()
 
